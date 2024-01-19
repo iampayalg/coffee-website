@@ -6,7 +6,7 @@
 * {
     margin: 0;
     padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 :root {
     --darkcyan:#0E8784;
@@ -33,21 +33,25 @@ p {
 h1 {
     font-size: 72px;
     line-height: 72px;
+    font-family: 'Fraunces', serif;
 } 
 
 h2 {
     font-size: 40px;
     line-height: 48px;
+    font-family: 'Fraunces', serif;
 }
 
 h3 {
     font-size: 32px;
     line-height: 36px;
+    font-family: 'Fraunces', serif;
 }
 
 h4 {
     font-size: 24px;
     line-height: 32px;
+    font-family: 'Fraunces', serif;
 }
 ul {
     list-style: none;
@@ -58,10 +62,11 @@ ul {
     gap: 33px;
     
 }
-ul :hover {
+header ul :hover {
     color: var(--darkgreyblue);
 }
 a {
+    cursor: pointer;
     color: var(--grey);
     text-decoration: none;
 }
@@ -89,7 +94,7 @@ a {
 .banner-content-text {
     margin: 56px 0px;
 }
-.banner-content-btn {
+.btn {
     background-color: var(--darkcyan);
     color: var(--lightcream);
     border-radius: 6px;
@@ -99,7 +104,7 @@ a {
     font-size: 18px;
     font-family: 'Fraunces', serif;
 }
-.banner-content-btn:hover {
+.btn:hover {
     background-color: #66D2CF;
     cursor: pointer;
 }
@@ -137,22 +142,175 @@ a {
     top: 70px;
 
 }
-.collection-content p, h4 {
+.collection-content p, .collection-content h4 {
     color: var(--darkgreyblue);
 }
 
-/*                 services section style                      */
+/*                 services cards section style                      */
 
-.services-heading {
-    height: 577px;
+.services{
+    height: 728px;
+    background: none;
+}
+.services-heading-background {
     background-color: var(--darkgreyblue);
-    color: white;
-    text-align: center;
+    height: 577px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 6px;
+
+}
+.services-heading {
+    text-align: center;
+    width: 540px;
+    height: 160px;
+    color: white;
+    margin-bottom: 317px;
+    margin-top: 100px;
+}
+
+.services-heading h2 {
+    margin-bottom: 32px;
+}
+
+.heading-group {
+    width: 540px;
 }
 
 .services-details {
     display: flex;
-    text-align: center;
-    
+    text-align: center; 
+    gap: 30px;
+    position: relative;
+    bottom: 200px;
+    justify-content: center;
+}
+
+
+.card {
+    height: 382px;
+    width: 350px;
+    background-color: var(--darkcyan);
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    width: 71px;
+    height: 72px;
+    margin-bottom: 56px;
+}
+.card p {
+    width: 255px;
+}
+.card h4 {
+    margin-bottom: 24px;
+}
+
+/*              work section style           */
+
+.work {
+    height: 565px;
+    margin-top:200px;
+}
+
+
+.work h1 {
+    color: var(--paleorange);
+}
+
+.work h4 {
+    color: var(--grey);
+    margin-bottom: 80px;
+}
+.work h3 {
+    margin-top: 38px;
+    margin-bottom: 42px;
+    width: 255px;
+}
+
+.work-details {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.work-details::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    height: 1px;
+    width: 80%;
+    background-color: var(--darkcyan);
+    z-index: 1;
+}
+
+.details {
+    color: var(--darkgreyblue);
+    width: 285px;
+    height: 355px;
+    margin-top: 65px;
+    position: relative;
+}
+
+.details::before {
+    content: "";
+    position: absolute;
+    top: -97px;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    border: 2px solid var(--darkcyan);
+    border-radius: 50%;
+    background-color: var(--white);
+    z-index: 2;
+}
+
+.work-btn {
+    margin-top: 64px;
+}
+
+/*              footer style             */
+footer {
+    background-color: var(--darkgreyblue);
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 85px;
+    margin-top: 200px;
+    margin-bottom: 88px;
+    height: 120px;
+    align-items: center;
+}
+footer img {
+    width: 236px;
+    height: 26px;  
+}
+
+.footer-navbar {
+    gap: 102px;
+    margin: 0px;
+}
+
+.navlinks a:hover{
+    color: white;
+}
+.icons {
+    color: white;
+    width: 120px;
+    height: 24px;
+    gap: 24px;
+    display: flex;
+}
+
+.fa-brands {
+   font-size: 24px;
+}
+.fa-brands:hover{
+    color: var(--paleorange);
+    cursor: pointer;
 }

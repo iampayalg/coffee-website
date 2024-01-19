@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --darkcyan:#0E8784;
+    --lightcream:#FEFCF7;
+    --paleorange:#FDD6BA;
+    --darkgreyblue:#333D4B;
+    --grey:#83888F;
+    --white:#ffffff;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 72px;
+    font-family: 'Fraunces', serif;
+} 
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Fraunces', serif;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 36px;
+    font-family: 'Fraunces', serif;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Fraunces', serif;
+}
+ul {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.92px;
+    gap: 33px;
+    
+}
+header ul :hover {
+    color: var(--darkgreyblue);
+}
+a {
+    cursor: pointer;
+    color: var(--grey);
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 44px 01px;
+}
+
+/*               banner style                */
+
+.banner {
+    background-image: url(/images/Group\ 7\ \(2\).png);
+    background-repeat: no-repeat;
+    height: 600px;
+    overflow: hidden;
+}
+.banner-content {
+    width: 493px;
+    height: 367px;
+    margin: 117px 85px;
+    color: var(--lightcream);
+}
+.banner-tagline {
+    margin-top: 24px;
+}
+/*              work section style           */
+
+.work {
+    background-color: var(--darkgreyblue);
+    height: 653px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.work-content {
+    height: 454px;
+    margin: 100px;
+}
+.work h1 {
+    color: var(--paleorange);
+}
+
+.work h3 {
+    color: var(--white);
+    margin-top: 38px;
+    margin-bottom: 43px;
+    width: 255px;
+}
+
+.work-details {
+    display: flex;
+    justify-content: space-between;
+}
+.details {
+    color: var(--white);
+    width: 285px;
+    margin-top: 65px;
+}
+
+/*           menu - cards section style           */
+
+.menu {
+    margin: 24px;
+    display: flex;
+    gap: 25.5px;
+    color: var(--grey);
+    opacity: 0.85px;
+}
+.side-menu {
+    width: 255px;
+    height: 356px;
+}
+.cards {
+    display: flex;
+    gap: 125px;
+    margin: 160px 85px 88px;
+}
+
+.qsn-cards h2 {
+    color: var(--grey);
+}
+.card-container{
+    margin-top: 88px;
+}
+.ans-cards{
+    display: flex;
+    margin-top: 56px;
+    height: 250px;
+    gap: 23px;
+}
+.ans{
+    border-radius: 8px;
+    color: var(--darkgreyblue);
+    padding: 32px 24px 84px;
+}
+.ans:hover {
+    background-color: var(--paleorange);
+}
+.ans h4 {
+    margin-bottom: 24px;
+}
+.capsule , .espresso , .singleorigin, .blended , .quantity500, .quantity1000, .wholebean, .Filter, .weeks, .month {
+    background-color: var(--lightcream);
+}
+
+.filter , .decaf, .quantity250, .cafetiere, .week{
+    background-color: var(--darkcyan);
+    color: white;
+}
+
+.order-summary {
+    background-color: var(--darkgreyblue);
+    color: white;
+    padding: 27px 64px;
+    margin-top: 88px;
+    border-radius: 10px;
+}
+.order-summary span{
+    color: var(--darkcyan);
+}
+.order-summary p {
+    color: var(--grey);
+    margin-bottom: 8px;
+}
+.order-summary-btn {
+    margin-left: 513px;
+    margin-top: 40px;
+    background-color: var(--darkcyan);
+    color: var(--lightcream);
+    border-radius: 6px;
+    width: 217px;
+    height: 56px;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+}
+.order-summary-btn:hover {
+    background-color: #66D2CF;
+    cursor: pointer;
+}
+
+
+
+/*              footer section                */
+
+footer {
+    background-color: var(--darkgreyblue);
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 85px;
+    margin-top: 0px;
+    margin-bottom: 88px;
+    height: 120px;
+    align-items: center;
+}
+footer img {
+    width: 236px;
+    height: 26px;  
+}
+
+.footer-navbar {
+    gap: 102px;
+    margin: 0px;
+}
+
+.navlinks a:hover{
+    color: white;
+}
+.icons {
+    color: white;
+    width: 120px;
+    height: 24px;
+    gap: 24px;
+    display: flex;
+}
+
+.fa-brands {
+   font-size: 24px;
+}
+.fa-brands:hover{
+    color: var(--paleorange);
+    cursor: pointer;
+}
