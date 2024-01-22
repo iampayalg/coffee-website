@@ -83,6 +83,7 @@ a {
     background-image: url(/images/homebanner.jpg);
     background-repeat: no-repeat;
     overflow: hidden;
+    border-radius: 8px;
 }
 .banner-content {
     width: 493px;
@@ -273,6 +274,7 @@ a {
     background-image: url(/images/aboutbanner.png);
     background-repeat: no-repeat;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .aboutus-banner-content, .plan-banner-content {
@@ -357,6 +359,7 @@ a {
     background-image: url(/images/planbanner.png);
     background-repeat: no-repeat;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 /*  plan work section    */
@@ -370,16 +373,7 @@ a {
 .plan-work-content {
     padding: 100px;
 }
-.work h1 {
-    color: var(--paleorange);
-}
 
-.work h3 {
-    color: var(--white);
-    margin-top: 38px;
-    margin-bottom: 43px;
-    width: 255px;
-}
 
 .plan-work-details {
     display: flex;
@@ -454,7 +448,7 @@ a {
 }
 .arrow{
    position: absolute;
-   left: 80%;
+   left: 89%;
 }
 .all-qsn-cards {
     display: flex;
@@ -547,4 +541,99 @@ footer img {
 .fa-brands:hover{
     color: var(--paleorange);
     cursor: pointer;
+}
+
+@media screen and (max-width:1300px){
+
+    .container{
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*  home page section  */
+    .collection-container {
+        margin: 117px 0px;
+    }
+
+    .collection-heading-text { 
+        font-size: 160px; 
+    }
+
+    .services-details {
+        margin: 0px 50px;
+    }
+
+    .work-details::before{
+        width: 75%;
+    }
+
+    /* about us page  */
+    .quality-details {
+        width: 340px;
+    }
+
+    /* plan page */
+    .plan-work-details::before{
+        width: 70%;
+    }
+
+    .menu::before{
+        width: 16%;
+    }
+    .plan-cards {
+        margin: 160px 20px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .container{
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner {
+        background-image: url(/images/banner.jpg);
+    }
+    .collection-heading-text
+    {
+        font-size: 130px;
+    }
+    .collection-heading-background{
+        width: 900px;
+    }
+    .collection-content {
+        display: inline;
+    }
+    .coffee {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .coffee-details {
+        display: inline;
+        text-align: left;
+        width: 400px;
+    }
+    .work-details::before {
+        width: 70%;
+    }
+    footer {
+        padding: 47px 25px;
+    }
+    .quality img {
+        width: 300px;
+    }
+    .quality-details h2 {
+        font-size: 25px;
+    }
+    .quality-details p{
+        font-size: 12px;
+    }
+    .headquarter {
+        margin: 168px 0px;
+    }
+    .plan-work-details::before{
+        width: 73%;
+    }
 }
