@@ -452,6 +452,14 @@ a {
 .qsn-cards h2 {
     color: var(--grey);
 }
+.arrow{
+   position: absolute;
+   left: 80%;
+}
+.all-qsn-cards {
+    display: flex;
+    align-items: center;
+}
 .card-container{
     margin-top: 88px;
 }
