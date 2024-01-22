@@ -82,12 +82,10 @@ a {
 .banner {
     background-image: url(/images/Group\ 7\ \(2\).png);
     background-repeat: no-repeat;
-    height: 600px;
     overflow: hidden;
 }
 .banner-content {
     width: 493px;
-    height: 367px;
     margin: 117px 85px;
     color: var(--lightcream);
 }
@@ -98,14 +96,12 @@ a {
 
 .work {
     background-color: var(--darkgreyblue);
-    height: 653px;
     border-radius: 10px;
-    overflow: hidden;
+    margin-top: 169px;
 }
 
 .work-content {
-    height: 454px;
-    margin: 100px;
+    padding: 100px;
 }
 .work h1 {
     color: var(--paleorange);
@@ -121,12 +117,38 @@ a {
 .work-details {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+.work-details::before {
+    content: "";
+    position: absolute;
+    top: 79px;
+    height: 1px;
+    width: 75%;
+    background-color: var(--darkcyan);
+    z-index: 1;
+}
+
 .details {
     color: var(--white);
     width: 285px;
-    margin-top: 65px;
+    margin-top: 156px;
+    position: relative;
 }
+
+.details::before {
+    content: "";
+    position: absolute;
+    top: -97px;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    border: 2px solid var(--darkcyan);
+    border-radius: 50%;
+    background-color: var(--white);
+    z-index: 2;
+}
+
 
 /*           menu - cards section style           */
 
@@ -137,14 +159,11 @@ a {
     color: var(--grey);
     opacity: 0.85px;
 }
-.side-menu {
-    width: 255px;
-    height: 356px;
-}
+
 .cards {
     display: flex;
     gap: 125px;
-    margin: 160px 85px 88px;
+    margin: 160px 85px;
 }
 
 .qsn-cards h2 {
@@ -156,7 +175,6 @@ a {
 .ans-cards{
     display: flex;
     margin-top: 56px;
-    height: 250px;
     gap: 23px;
 }
 .ans{
@@ -219,14 +237,11 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 47px 85px;
-    margin-top: 0px;
     margin-bottom: 88px;
-    height: 120px;
     align-items: center;
 }
 footer img {
-    width: 236px;
-    height: 26px;  
+    width: 236px; 
 }
 
 .footer-navbar {
@@ -239,8 +254,6 @@ footer img {
 }
 .icons {
     color: white;
-    width: 120px;
-    height: 24px;
     gap: 24px;
     display: flex;
 }

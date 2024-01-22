@@ -82,12 +82,10 @@ a {
 .banner {
     background-image: url(/images/Bitmap.jpg);
     background-repeat: no-repeat;
-    height: 600px;
     overflow: hidden;
 }
 .banner-content {
     width: 493px;
-    height: 367px;
     margin: 117px 85px;
     color: var(--lightcream);
 }
@@ -134,7 +132,7 @@ a {
 }
 .collection-content {
     display: flex;
-    height: 393px;
+    height: 398px;
     text-align: center;
     gap: 30px;
     line-height: 66px;
@@ -149,12 +147,10 @@ a {
 /*                 services cards section style                      */
 
 .services{
-    height: 728px;
     background: none;
 }
 .services-heading-background {
     background-color: var(--darkgreyblue);
-    height: 577px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +161,6 @@ a {
 .services-heading {
     text-align: center;
     width: 540px;
-    height: 160px;
     color: white;
     margin-bottom: 317px;
     margin-top: 100px;
@@ -214,11 +209,6 @@ a {
 
 /*              work section style           */
 
-.work {
-    height: 565px;
-    margin-top:200px;
-}
-
 
 .work h1 {
     color: var(--paleorange);
@@ -243,7 +233,7 @@ a {
 .work-details::before {
     content: "";
     position: absolute;
-    top: -16px;
+    top: -14px;
     height: 1px;
     width: 80%;
     background-color: var(--darkcyan);
@@ -253,7 +243,6 @@ a {
 .details {
     color: var(--darkgreyblue);
     width: 285px;
-    height: 355px;
     margin-top: 65px;
     position: relative;
 }
@@ -283,12 +272,10 @@ footer {
     padding: 47px 85px;
     margin-top: 200px;
     margin-bottom: 88px;
-    height: 120px;
     align-items: center;
 }
 footer img {
-    width: 236px;
-    height: 26px;  
+    width: 236px; 
 }
 
 .footer-navbar {
@@ -301,8 +288,6 @@ footer img {
 }
 .icons {
     color: white;
-    width: 120px;
-    height: 24px;
     gap: 24px;
     display: flex;
 }

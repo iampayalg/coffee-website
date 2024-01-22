@@ -81,12 +81,10 @@ a {
 .banner {
     background-image: url(/images/Group\ 7.png);
     background-repeat: no-repeat;
-    height: 600px;
     overflow: hidden;
 }
 .banner-content {
     width: 493px;
-    height: 367px;
     margin: 117px 85px;
     color: var(--lightcream);
 }
@@ -98,21 +96,15 @@ a {
 
 .commitment {
     display: flex;
-    height: 520px;
-    margin: 0px 85px;
+    margin: 168px 85px;
     align-items: center;
     gap: 125px;
     color: var(--darkgreyblue);
 }
 .commitment img {
     border-radius: 8px;
-    width: 445px;
-    height: 520px;
 }
-.commitment-details {
-    width: 540px;
-    height: 340px;
-}
+
 
 /*              quality section                */
 
@@ -121,7 +113,6 @@ a {
     margin-top: 256px;
 }
 .quality-details-background {
-    height: 474px;
     background-color: var(--darkgreyblue);
     border-radius: 10px;
     display: flex;
@@ -131,7 +122,6 @@ a {
 }
 .quality-details {
     width: 540px;
-    height: 210px;
 }
 .quality img {
     position: relative;
@@ -141,12 +131,10 @@ a {
 /*              headquarter section style           */
 
 .headquarter {
-    height: 366px;
     margin:168px 150px 168px 85px;
 }
 
 .headquarter-details {
-    height: 262px;
     display: flex;
     justify-content: space-between;
 }
@@ -175,14 +163,11 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 47px 85px;
-    margin-top: 0px;
     margin-bottom: 88px;
-    height: 120px;
     align-items: center;
 }
 footer img {
     width: 236px;
-    height: 26px;  
 }
 
 .footer-navbar {
@@ -195,8 +180,6 @@ footer img {
 }
 .icons {
     color: white;
-    width: 120px;
-    height: 24px;
     gap: 24px;
     display: flex;
 }
