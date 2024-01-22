@@ -464,20 +464,13 @@ a {
     border-radius: 8px;
     color: var(--darkgreyblue);
     padding: 32px 24px 84px;
+    background-color: var(--lightcream);
 }
 .ans:hover {
     background-color: var(--paleorange);
 }
 .ans h4 {
     margin-bottom: 24px;
-}
-.capsule , .espresso , .singleorigin, .blended , .quantity500, .quantity1000, .wholebean, .Filter, .weeks, .month {
-    background-color: var(--lightcream);
-}
-
-.filter , .decaf, .quantity250, .cafetiere, .week{
-    background-color: var(--darkcyan);
-    color: white;
 }
 
 .order-summary {
@@ -497,7 +490,7 @@ a {
 .order-summary-btn {
     margin-left: 513px;
     margin-top: 40px;
-    background-color: var(--darkcyan);
+    background-color: lightgrey;
     color: var(--lightcream);
     border-radius: 6px;
     width: 217px;
@@ -510,8 +503,6 @@ a {
     background-color: #66D2CF;
     cursor: pointer;
 }
-
-
 
 
 /*              footer style             */
