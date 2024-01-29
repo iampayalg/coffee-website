@@ -140,7 +140,7 @@ header {
 
 .collection-heading-background {
     width: 1111px; 
-    height: 70px; 
+    height: 79px; 
     position: absolute; 
     background: linear-gradient(180deg, rgba(254, 252, 247, 0) 0%, #FEFCF7 100%)
 }
@@ -151,7 +151,7 @@ header {
     gap: 30px;
     line-height: 66px;
     position: relative;
-    top: 5px;
+    top: 25px;
 
 }
 .collection-content p, .collection-content h4 {
@@ -161,9 +161,6 @@ header {
 
 /*  home services section  */
 
-.services{
-    background: none;
-}
 .services-heading-background {
     background-color: var(--darkgreyblue);
     display: flex;
@@ -195,7 +192,7 @@ header {
     gap: 30px;
     position: relative;
     bottom: 200px;
-    justify-content: center;
+   justify-content: center;
 }
 
 .card {
@@ -245,8 +242,8 @@ header {
 .work-details::before {
     content: "";
     position: absolute;
-    top: -14px;
-    height: 1px;
+    top: -13px;
+    height: 2px;
     width: 80%;
     background-color: var(--paleorange);
     z-index: 1;
@@ -303,6 +300,7 @@ header {
     align-items: center;
     justify-content:center ;
     gap: 125px;
+    padding: 25px;
 }
 
 .quality-details {
@@ -312,6 +310,7 @@ header {
 .quality img {
     position: relative;
     bottom: 88px;
+    border-radius: 8px;
 }
 
 /*  about us headquarter section    */
@@ -361,7 +360,7 @@ header {
     content: "";
     position: absolute;
     top: 120px;
-    height: 1px;
+    height: 2px;
     width: 49.8rem;
     background-color: var(--paleorange);
     left: 117px;
@@ -551,8 +550,8 @@ footer img {
     }
 
     /* plan page */
-    .plan-work-details::before{
-        width: 70%;
+    .plan-work-content::before{
+        width: 38.5rem;
     }
     .arrow {
         left: 90%;
@@ -573,9 +572,6 @@ footer img {
     }
 
     /* home page  */
-    .banner {
-        background-image: url(/images/homebanner.jpg);
-    }
     .collection-heading-text
     {
         font-size: 130px;
@@ -601,22 +597,28 @@ footer img {
     }
 
     /* about us page  */
+    .commitment img {
+        width: 412px;
+        height: 520px;
+    }
+    .commitment {
+        margin: 168px 0px;
+    }
     .quality img {
-        width: 300px;
+        width: 350px;
+        height: 450px;
     }
     .quality-details h2 {
         font-size: 25px;
     }
-    .quality-details p{
-        font-size: 12px;
-    }
+
     .headquarter {
         margin: 168px 0px;
     }
 
     /* plan page  */
-    .plan-work-details::before{
-        width: 73%;
+    .plan-work-content::before{
+        width: 31.5rem;
     }
     .plan-details{
         width: 200px;
@@ -664,11 +666,10 @@ footer img {
     /* home page  */
     .banner {
         background-image: url(/images/tablet\ banner.jpg);
-        height: 500px;
     }
     .banner-content{
         width: 420px;
-        margin: 87px 58px;
+        margin: 100px 42px;
     }
     .banner-heading{
         font-size: 48px;
@@ -676,9 +677,6 @@ footer img {
     }
     .banner-tagline {
         margin-top: 24px;
-    }
-    .collection-container{
-        height: 927px;
     }
     .collection-heading-text{
         font-size: 116px;
@@ -694,15 +692,13 @@ footer img {
     }
     .services-details{
         flex-direction: column;
-        bottom: 265px;   
+        bottom: 265px; 
+        align-items: center;  
     }
     .card {
         height: 180px;
         width: 573px;
-        display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
     }
     .card img {
         margin-bottom: 0px;
@@ -723,7 +719,6 @@ footer img {
     /* about page  */
     .aboutus-banner {
         background-image: url(/images/abouttablet.jpg);
-        height: 400px;
     }
     .aboutus-banner-heading{
         font-size: 32px;
@@ -743,14 +738,14 @@ footer img {
         font-size: 32px;
         line-height: 90px;
     }
-    .quality-details {
+    .quality {
+        flex-direction: column-reverse;
+        gap: 0;
         text-align: center;
+    }
+    .quality-details {
         width: 540px;
         margin-bottom: 64px;
-    }
-    .quality-details-background{
-        flex-direction: column-reverse;
-        gap: 0px;
     }
     .quality img {
         width: 573px;
@@ -782,6 +777,11 @@ footer img {
     .plan-details{
         width: 160px;
     }
+    .plan-work-content::before{
+        width: 26.9rem;
+        top: 70px;
+        left: 67px;
+    }
     .arrow{
         left: 80%;
     }
@@ -797,7 +797,7 @@ footer img {
 
 @media screen and (max-width:768px) {
     .container{
-        max-width: 600px;
+        max-width: 650px;
         width: 100%;
         margin: 0 auto;
     }
@@ -816,7 +816,6 @@ footer img {
     .navbar-toggleshow {
         display: flex;
     }
-
       /* home page  */
     .collection-heading-text{
         font-size:  100px ;
@@ -825,16 +824,29 @@ footer img {
         width: 482px;
     }
       /* about us */
-
+    .quality img {
+        width: 500px;
+    }
+        /* plan page  */
+    .plan-work-content::before{
+        width: 24.5rem;
+    }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
     .container{
-        max-width: 400px;
+        max-width: 500px;
         width: 100%;
         margin: 0 auto;
     }
     .banner{
         background-image: url(/images/Bitmap.jpg);
+    }
+    .banner-content{
+        width: 317px;
         text-align: center;
     }
+    .collection-heading-text {
+        font-size: 59px;
+    }
+
 } 
