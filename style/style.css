@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap');
 
 * {
     margin: 0;
@@ -798,13 +796,14 @@ footer img {
         display: none;
     }
     .Navbar-Link-toggle {
-        align-self: flex-end;
         display: flex;
-        position: relative;
         cursor: pointer;
-    }
+        flex-direction: row-reverse;
+    } 
     .navbar-toggleshow {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
       /* home page  */
     .collection-heading-text{
@@ -965,5 +964,8 @@ footer img {
     }
     .qsn-cards {
         width: 324px;
+    }
+    .order-summary{
+        width: 450px;
     }
 } 
