@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&family=Fraunces:opsz,wght@9..144,900&display=swap');
 
 * {
     margin: 0;
@@ -58,7 +58,7 @@ ul {
     font-weight: bold;
     letter-spacing: 0.92px;
     gap: 33px;
-    
+    font-family: 'Barlow', sans-serif;
 }
 
 header ul :hover {
@@ -77,6 +77,10 @@ header {
     align-items: center;
     margin: 44px 1px;
 }
+.logo {
+    width: 236px;
+    height: 26px;
+}
 
 .Navbar-Link-toggle{
     display: none;
@@ -93,12 +97,13 @@ header {
 
 .banner-content {
     width: 493px;
-    margin: 134px 85px;
+    margin: 117px 85px;
     color: var(--lightcream);
 }
 
 .banner-tagline{
-    margin-top: 32px;
+    margin: 32px 48px 56px 0px;
+    height: 78px;
 }
 
 .btn {
@@ -110,7 +115,6 @@ header {
     border: 0;
     font-size: 18px;
     font-family: 'Fraunces', serif;
-    margin-top: 64px;
 }
 
 .btn:hover {
@@ -121,25 +125,30 @@ header {
 /*  home collection section  */
 .collection-container {
     margin: 130px 85px 212px;
+    width: 1113px;
+    height: 519px;
 }
 
 .collection-heading {
     opacity: 0.3;
     position: relative;
+    height: 196px;
+    width: 1111px;
 }
 
-.collection-heading-text {
-    top: 86px; 
-    position: relative; 
+.collection-heading-text { 
     color: var(--grey); 
     font-size: 180px; 
     text-align: center;
+    position: relative;
+    top: 30px;
 }
 
 .collection-heading-background {
     width: 1111px; 
     height: 79px; 
     position: absolute; 
+    top: 109px;
     background: linear-gradient(180deg, rgba(254, 252, 247, 0) 0%, #FEFCF7 100%)
 }
 
@@ -147,39 +156,35 @@ header {
     display: flex;
     text-align: center;
     gap: 30px;
-    line-height: 66px;
     position: relative;
-    top: 25px;
+    top: -67px;
 
 }
 .collection-content p, .collection-content h4 {
     color: var(--darkgreyblue);
 }
+.coffee-details{
+    margin-top: 66px;
+}
 
 
 /*  home services section  */
 
-.services-heading-background {
+.services-heading {
+    text-align: center;
+    color: white;
     background-color: var(--darkgreyblue);
     display: flex;
     justify-content: center;
     border-radius: 6px;
-
+    padding: 100px 370px 317px;
+    flex-direction: column;
+    gap: 32px;
 }
-.services-heading {
-    text-align: center;
-    width: 540px;
-    color: white;
-    margin-bottom: 317px;
-    margin-top: 100px;
-}
-
-.services-heading h2 {
-    margin-bottom: 32px;
-}
-
-.heading-group {
-    width: 540px;
+.services-heading p {
+    width: 531px;
+    height: 80px;
+    margin-top: 0px;
 }
 
 .services-details {
@@ -187,7 +192,7 @@ header {
     text-align: center; 
     gap: 30px;
     position: relative;
-    bottom: 200px;
+    bottom: 231px;
    justify-content: center;
 }
 
@@ -211,11 +216,11 @@ header {
 /*   work section style     */
 .work h1 {
     color: var(--paleorange);
+    margin-top: 85px;
 }
 
 .work h4 {
     color: var(--grey);
-    margin-bottom: 80px;
 }
 
 .work h3 {
@@ -227,13 +232,14 @@ header {
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-top: 73px;
 }
 
 .work-details::before {
     content: "";
     position: absolute;
-    top: -13px;
-    height: 2px;
+    top: 48px;
+    height: 3px;
     width: 80%;
     background-color: var(--paleorange);
     z-index: 1;
@@ -242,14 +248,14 @@ header {
 .details {
     color: var(--darkgreyblue);
     width: 285px;
-    margin-top: 65px;
+    margin-top: 32px;
     position: relative;
 }
 
 .details::before {
     content: "";
     position: absolute;
-    top: -97px;
+    top: 0;
     left: 0;
     width: 31px;
     height: 31px;
@@ -258,7 +264,9 @@ header {
     background-color: var(--white);
     z-index: 2;
 }
-
+.work-btn{
+    margin-top: 44px;
+}
 /*    ABOUT US PAGE     */
 .aboutus-banner {
     background-image: url(/images/aboutbanner.png);
@@ -494,6 +502,11 @@ footer {
 }
 footer img {
     width: 236px; 
+}
+.footer-navbar{
+    display: flex;
+    align-items: center;
+    gap: 102px;
 }
 
 
