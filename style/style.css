@@ -59,6 +59,7 @@ ul {
     letter-spacing: 0.92px;
     gap: 33px;
     font-family: 'Barlow', sans-serif;
+    line-height: 15px;
 }
 
 header ul :hover {
@@ -169,7 +170,9 @@ header {
 
 
 /*  home services section  */
-
+.services{
+    height: 728px;
+}
 .services-heading {
     text-align: center;
     color: white;
@@ -214,9 +217,12 @@ header {
 }
 
 /*   work section style     */
+.home-work {
+    margin: 200px 150px 200px 85px;
+}
 .work h1 {
     color: var(--paleorange);
-    margin-top: 85px;
+    margin-top: 101px;
 }
 
 .work h4 {
@@ -232,15 +238,15 @@ header {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-top: 73px;
+    margin-top: 80px;
 }
 
 .work-details::before {
     content: "";
     position: absolute;
-    top: 48px;
+    top: 15px;
     height: 3px;
-    width: 80%;
+    width: 75%;
     background-color: var(--paleorange);
     z-index: 1;
 }
@@ -248,7 +254,6 @@ header {
 .details {
     color: var(--darkgreyblue);
     width: 285px;
-    margin-top: 32px;
     position: relative;
 }
 
@@ -265,11 +270,24 @@ header {
     z-index: 2;
 }
 .work-btn{
-    margin-top: 44px;
+    margin-top: 64px;
 }
 /*    ABOUT US PAGE     */
+.aboutus-container p {
+    line-height: 1.625rem;
+}
 .aboutus-banner {
     background-image: url(/images/aboutbanner.png);
+}
+.aboutus-banner-content{
+    width: 445px;
+    margin: 137px 85px;
+}
+.aboutus-banner-heading{
+    font-size: 40px;
+}
+.aboutus-banner-tagline {
+    margin-top: 32px;
 }
 
 /* about us commitment section  */
@@ -280,7 +298,9 @@ header {
     gap: 125px;
     color: var(--darkgreyblue);
 }
-
+.commitment-details{
+    height: 340px;
+}
 .commitment img {
     border-radius: 8px;
 }
@@ -298,11 +318,11 @@ header {
     align-items: center;
     justify-content:center ;
     gap: 125px;
-    padding: 25px;
 }
 
-.quality-details {
+.quality-details p {
     width: 540px;
+    margin-top: 32px;
 }
 
 .quality img {
@@ -319,17 +339,17 @@ header {
 .headquarter-content {
     display: flex;
     justify-content: space-between;
+    margin-top:72px;
 }
 
 .headquarter h4 {
     color: var(--grey);
-    margin-bottom:72px;
 }
 .headquarter h3 {
-    margin-top: 45px;
+    margin-top: 43px;
 }
 
-.headquater-details {
+.headquarter-details{
     color: var(--darkgreyblue);
     width: 285px;
 }
@@ -338,61 +358,72 @@ header {
 .plan-banner {
     background-image: url(/images/planbanner.png);
 }
+.plan-banner-tagline{
+    line-height: 1.625rem;
+    margin-top: 32px;
+}
+.plan-banner-content{
+    margin: 134px 85px;
+    width: 486px;
+}
 
 /*  plan work section    */
 .plan-work {
     background-color: var(--darkgreyblue);
     border-radius: 10px;
-    margin-top: 169px;
+    margin-top: 168px;
+    padding: 92px 150px 107px 85px;
 }
 
 .plan-work-content {
-    padding: 100px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-
 .plan-work-content::before {
     content: "";
     position: absolute;
-    top: 120px;
+    top: 15.5px;
     height: 2px;
-    width: 49.8rem;
+    width: 47.5rem;
     background-color: var(--paleorange);
-    left: 117px;
+    left: 15.5px;
 }
-
+.plan-details p {
+    line-height: 1.65rem;
+}
 .plan-details {
     color: var(--white);
     width: 285px;
-    margin-top: 100px;
+    height: 454px;
     position: relative;
 }
 
 .plan-details::before {
     content: "";
     position: absolute;
-    top: -97px;
-    left: 0;
     width: 31px;
     height: 31px;
     border: 2px solid var(--darkcyan);
     border-radius: 50%;
     z-index: 2;
 }
+.plan-work h1 {
+    margin-top: 82px;
+}
 
 /*   plan menu - cards section  */
 .prefrence-no {
     color: var(--darkcyan);
 }
-.side-menu h4 {
-    font-size: 20px;
+.menu-list{
+    width: 255px;
 }
-.side-menu-no{
+.menu-list-no{
     color: var(--grey);
 }
+
 .menu {
     opacity: 0.4;
     margin: 24px;
@@ -400,10 +431,10 @@ header {
     gap: 25.5px;
     color: var(--darkgreyblue);
 }
-.menu::after{
+.menu::before{
     content: "";
     position: absolute;
-    width: 10%;
+    width: 13%;
     height: 1px;
     background-color: var(--grey);
     margin-top: 40px;
@@ -412,6 +443,7 @@ header {
 .menu:hover{
     opacity: 0.6;
 }
+
 .deliveries{
     opacity: 1;
 }
@@ -422,14 +454,13 @@ header {
 }
 .plan-icons {
     color: var(--darkcyan);
-    font-size: 30px;
 }
 .qsn-cards h2 {
     color: var(--grey);
 }
 .arrow{
    position: absolute;
-   left: 82%;
+   left: 77%;
 }
 .all-qsn-cards {
     display: flex;
@@ -461,7 +492,7 @@ header {
 .order-summary-details {
     background-color: var(--darkgreyblue);
     color: white;
-    padding: 27px 64px;
+    padding: 47px 64px;
     margin-top: 88px;
     border-radius: 10px;
 }
@@ -470,8 +501,11 @@ header {
 }
 .order-summary p {
     color: var(--grey);
+    line-height: 1.625rem;
     margin-bottom: 8px;
+    margin-top: 0px;
 }
+
 .order-summary-btn {
     margin-left: 503px;
     margin-top: 40px;
@@ -521,6 +555,7 @@ footer img {
 
 .fa-brands {
    font-size: 24px;
+   width: 24px;
 }
 .fa-brands:hover{
     color: var(--paleorange);
@@ -545,17 +580,29 @@ footer img {
     }
 
     .work-details::before{
-        width: 75%;
+        width: 67%;
     }
 
     /* about us page  */
-    .quality-details {
+    .quality-details p, .quality-details {
         width: 340px;
+    }
+    .quality{
+        gap: 100px;
+    }
+    .headquarter-details{
+        width: auto;
     }
 
     /* plan page */
     .plan-work-content::before{
         width: 38.5rem;
+    }
+    .plan-work-content{
+        gap: 58px;
+    }
+    .plan-details br{
+        display: none;
     }
     .arrow {
         left: 90%;
